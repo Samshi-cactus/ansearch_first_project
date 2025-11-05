@@ -1,0 +1,45 @@
+# -----------------------------
+# Python / tooling
+# -----------------------------
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# -----------------------------
+# IDE / local configs
+# -----------------------------
+.vscode/
+.idea/
+.env
+
+# -----------------------------
+# Logs / misc
+# -----------------------------
+logs/
+*.log
+reports/
+
+# -----------------------------
+# Data policy
+# -----------------------------
+data/**
+!data/
+!data/restaurants_all.jsonl
+!data/restaurant_*.jsonl
+data/reviews_googleplus.jsonl
+data/reviews.clean.json
+data/reviews_*.jsonl
+
+# -----------------------------
+# Outputs (keep visible)
+# -----------------------------
+output/**
+!output/topic_summary.csv
+!output/topics_*.json
+# Note output kept intentionally.
