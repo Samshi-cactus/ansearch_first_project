@@ -2,6 +2,11 @@
 
 By **Shishay Sium Araya** · MIT License
 
+### Executive Summary
+This prototype delivers a focused, end-to-end solution for detecting **recurrent themes in restaurant reviews**.  
+It combines TF-IDF text representations with efficient clustering to surface the most common discussion topics customers raise about each venue.  
+Designed for **clarity, speed, and reproducibility**, the pipeline can analyse a single restaurant or scale across multiple datasets, producing structured summaries that support evidence-based decision-making and customer insight analysis.
+
 Extract **recurring topics** from user reviews for **one restaurant per run**.  
 Fast, reproducible pipeline with clear topic labels.
 
@@ -30,7 +35,6 @@ Design goals: interpretability, speed, clean code, reproducibility.
 
 - Run **one restaurant per execution** (`--restaurant-id` flag).
 - Produce human-readable **topic labels**.
-- Keep code **PEP 8** and tool-clean (Ruff, Black, Pylint, pytest).
 
 ---
 
@@ -116,6 +120,27 @@ Ansearch_first_Project/
 
 ---
 
+## 4.1) Requirements
+
+Before running the project, ensure the following tools and versions are installed:
+
+| Requirement | Minimum Version | Purpose |
+| :----------- | :--------------- | :-------- |
+| **Python**   | 3.10+ (tested on 3.11) | Core runtime |
+| **pip**      | 23+ | Python package manager |
+| **virtualenv** or **venv** | — | Environment isolation |
+| **make**     | 4.3+ | Automates build/test commands |
+| **bash/zsh shell** | — | Runs `run_all_topics.sh` |
+| **spaCy** + `en_core_web_sm` model | — | Tokenisation and stop-word filtering |
+| **scikit-learn** | ≥ 1.2 | TF-IDF + MiniBatchKMeans |
+| **pandas / numpy** | — | Data wrangling |
+| **pytest** | — | Unit testing |
+
+💡 *Tip:* All required packages are automatically installed via  
+make deps or pip install -r requirements.txt.
+
+---
+
 ## 5) Environment setup
 
 ### Quick start (recommended)
@@ -159,7 +184,13 @@ python -m src.cli \
   --topk 8 \
   --out output/topics_106603537575677448372_katzs_delicatessen.json
 ```
-
+### Engine Explanation
+The flag `--engine simple` refers to a TF-IDF (unigram + bigram) vectorisation step
+combined with **MiniBatchKMeans** clustering, using an automatic K selection
+heuristic.  
+This design was chosen for its simplicity, transparency, and speed compared
+with heavier topic-modelling methods such as LDA or BERTopic. It provides
+interpretable clusters suitable for quick experimentation in limited time.
 ---
 
 ## 7) Output structure
@@ -192,10 +223,16 @@ Summary CSV (after `make summary`):
 | 106603537575677448372 | katzs_delicatessen | 7        | sandwiches | staff | pastrami |
 | 115691289199130168021 | home_slice_pizza   | 7        | awesome    | great | night    |
 
+### Reproducibility
+All random components (TF-IDF shuffling and clustering initialisation) use
+`random_state=42` to ensure deterministic results.  
+The prototype was developed and tested on **Python 3.11**.
 ---
 
 ## 8) Testing & linting (automated)
+Unit tests are provided under `tests/` to validate data-loading and name-resolution logic.
 
+Run all tests with:
 ```bash
 make test    # pytest (unit tests)
 ```
@@ -207,7 +244,6 @@ Expected:
 all checks passed
 ```
 
----
 
 ## 9) Automation, Design & Quality Framework
 
@@ -231,6 +267,15 @@ all checks passed
 | Dynamic `min_df` / `max_df` | Safe for tiny corpora, avoids fit errors    | May retain some rare n-grams        |
 | JSONL I/O                   | Stream-friendly, robust for large inputs    | Slightly larger disk footprint      |
 | Makefile-driven QA          | One-command reproducibility                 | Requires a Unix-like shell          |
+
+### Limitations
+While the current prototype performs well on English-language data, a few
+restaurants such as **VIPS Gran Vía** contain reviews in Spanish.  
+Because the preprocessing pipeline assumes English tokenisation and
+stop-word lists, topic labels in other languages may appear less consistent.
+A future enhancement could include automatic language detection and
+language-specific tokenisers or stop-word filters to improve multilingual
+robustness.
 
 ---
 
