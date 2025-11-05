@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "engine": "simple",
+    "language": "english",
+    "restaurant_id": "114850556776252373970",
+    "n_docs": 347,
+    "topk": 8,
+    "min_docs": 2,
+    "timestamp": "2025-11-05 05:38:07"
+  },
+  "topics": [
+    {
+      "id": 0,
+      "label": "best, austin, burgers",
+      "top_terms": [
+        "best",
+        "austin",
+        "burgers",
+        "best burgers",
+        "love",
+        "burger austin",
+        "burgers austin",
+        "burger"
+      ],
+      "size": 57
+    },
+    {
+      "id": 1,
+      "label": "line, wait, beer",
+      "top_terms": [
+        "line",
+        "wait",
+        "beer",
+        "excellent",
+        "great",
+        "burger",
+        "waiting",
+        "just"
+      ],
+      "size": 28
+    },
+    {
+      "id": 2,
+      "label": "town, best, burger",
+      "top_terms": [
+        "town",
+        "best",
+        "burger",
+        "hopdoddy",
+        "burgers",
+        "drinks",
+        "great",
+        "burgers town"
+      ],
+      "size": 30
+    },
+    {
+      "id": 3,
+      "label": "great, food, service",
+      "top_terms": [
+        "great",
+        "food",
+        "service",
+        "good",
+        "place",
+        "burgers",
+        "great food",
+        "great place"
+      ],
+      "size": 61
+    },
+    {
+      "id": 4,
+      "label": "burger, wait, worth",
+      "top_terms": [
+        "burger",
+        "wait",
+        "worth",
+        "worth wait",
+        "line",
+        "burgers",
+        "long",
+        "ve"
+      ],
+      "size": 133
+    },
+    {
+      "id": 5,
+      "label": "shake, delicious, caramel",
+      "top_terms": [
+        "shake",
+        "delicious",
+        "caramel",
+        "chocolate",
+        "sea salt",
+        "sea",
+        "salt",
+        "poblano"
+      ],
+      "size": 13
+    },
+    {
+      "id": 6,
+      "label": "amazing, burgers, amazing burgers",
+      "top_terms": [
+        "amazing",
+        "burgers",
+        "amazing burgers",
+        "awesome",
+        "burger",
+        "burger amazing",
+        "food",
+        "burgers amazing"
+      ],
+      "size": 25
+    }
+  ]
+}

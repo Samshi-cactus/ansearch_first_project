@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "engine": "simple",
+    "language": "english",
+    "restaurant_id": "112863106599855196547",
+    "n_docs": 351,
+    "topk": 8,
+    "min_docs": 2,
+    "timestamp": "2025-11-05 05:38:03"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "label": "amy, company, just",
+      "top_terms": [
+        "amy",
+        "company",
+        "just",
+        "baking",
+        "ramsey",
+        "baking company",
+        "customer",
+        "food"
+      ],
+      "size": 37
+    },
+    {
+      "id": 2,
+      "label": "terrible, people, owners",
+      "top_terms": [
+        "terrible",
+        "people",
+        "owners",
+        "food",
+        "horrible people",
+        "terrible food",
+        "food terrible",
+        "service"
+      ],
+      "size": 31
+    },
+    {
+      "id": 3,
+      "label": "place, food, owner",
+      "top_terms": [
+        "place",
+        "food",
+        "owner",
+        "owners",
+        "worst",
+        "undercooked",
+        "eat",
+        "worst place"
+      ],
+      "size": 53
+    },
+    {
+      "id": 4,
+      "label": "people, tips, don",
+      "top_terms": [
+        "people",
+        "tips",
+        "don",
+        "place",
+        "customers",
+        "bad",
+        "steal",
+        "staff"
+      ],
+      "size": 68
+    },
+    {
+      "id": 5,
+      "label": "food, just, horrible",
+      "top_terms": [
+        "food",
+        "just",
+        "horrible",
+        "owners",
+        "restaurant",
+        "good",
+        "kitchen",
+        "kitchen nightmares"
+      ],
+      "size": 141
+    },
+    {
+      "id": 6,
+      "label": "crazy, owners crazy, nasty",
+      "top_terms": [
+        "crazy",
+        "owners crazy",
+        "nasty",
+        "owners",
+        "bitch",
+        "party",
+        "listen",
+        "manager"
+      ],
+      "size": 20
+    }
+  ]
+}

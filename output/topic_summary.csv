@@ -1,0 +1,6 @@
+restaurant_id,name,n_topics,top_1,output_file
+106603537575677448372,katzs_delicatessen,7,"food, good, great food",topics_106603537575677448372_katzs_delicatessen.json
+112863106599855196547,amys_baking_company,6,"amy, company, just",topics_112863106599855196547_amys_baking_company.json
+114850556776252373970,hopdoddy_burger_bar,7,"best, austin, burgers",topics_114850556776252373970_hopdoddy_burger_bar.json
+115691289199130168021,home_slice_pizza,2,"pizza, great, best",topics_115691289199130168021_home_slice_pizza.json
+117304934396765704634,vips_gran_via,7,"muy, es, en",topics_117304934396765704634_vips_gran_via.json

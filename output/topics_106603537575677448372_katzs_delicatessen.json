@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "engine": "simple",
+    "language": "english",
+    "restaurant_id": "106603537575677448372",
+    "n_docs": 392,
+    "topk": 8,
+    "min_docs": 2,
+    "timestamp": "2025-11-05 05:38:00"
+  },
+  "topics": [
+    {
+      "id": 0,
+      "label": "food, good, great food",
+      "top_terms": [
+        "food",
+        "good",
+        "great food",
+        "expensive",
+        "staff",
+        "great",
+        "good food",
+        "food good"
+      ],
+      "size": 31
+    },
+    {
+      "id": 1,
+      "label": "deli, pastrami, katz",
+      "top_terms": [
+        "deli",
+        "pastrami",
+        "katz",
+        "worth",
+        "nyc",
+        "long",
+        "best deli",
+        "meat"
+      ],
+      "size": 107
+    },
+    {
+      "id": 2,
+      "label": "best, best pastrami, pastrami",
+      "top_terms": [
+        "best",
+        "best pastrami",
+        "pastrami",
+        "new",
+        "york",
+        "new york",
+        "corned beef",
+        "corned"
+      ],
+      "size": 57
+    },
+    {
+      "id": 3,
+      "label": "sandwiches, ll, big",
+      "top_terms": [
+        "sandwiches",
+        "ll",
+        "big",
+        "great",
+        "service",
+        "huge",
+        "good",
+        "share"
+      ],
+      "size": 34
+    },
+    {
+      "id": 4,
+      "label": "sandwich, great, pastrami",
+      "top_terms": [
+        "sandwich",
+        "great",
+        "pastrami",
+        "pastrami sandwich",
+        "pickles",
+        "day",
+        "place",
+        "experience"
+      ],
+      "size": 61
+    },
+    {
+      "id": 5,
+      "label": "like, food, place",
+      "top_terms": [
+        "like",
+        "food",
+        "place",
+        "ticket",
+        "pastrami",
+        "don",
+        "just",
+        "hot"
+      ],
+      "size": 86
+    },
+    {
+      "id": 6,
+      "label": "awesome, tourist, place",
+      "top_terms": [
+        "awesome",
+        "tourist",
+        "place",
+        "tourist trap",
+        "trap",
+        "love place",
+        "sandwiches",
+        "love"
+      ],
+      "size": 16
+    }
+  ]
+}

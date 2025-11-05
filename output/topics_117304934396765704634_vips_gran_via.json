@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "engine": "simple",
+    "language": "english",
+    "restaurant_id": "117304934396765704634",
+    "n_docs": 367,
+    "topk": 8,
+    "min_docs": 2,
+    "timestamp": "2025-11-05 05:38:16"
+  },
+  "topics": [
+    {
+      "id": 0,
+      "label": "muy, es, en",
+      "top_terms": [
+        "muy",
+        "es",
+        "en",
+        "madrid",
+        "que",
+        "bastante",
+        "los",
+        "muchos"
+      ],
+      "size": 32
+    },
+    {
+      "id": 1,
+      "label": "la, es, que",
+      "top_terms": [
+        "la",
+        "es",
+        "que",
+        "el",
+        "en",
+        "una",
+        "los",
+        "vips"
+      ],
+      "size": 49
+    },
+    {
+      "id": 2,
+      "label": "muy, es, que",
+      "top_terms": [
+        "muy",
+        "es",
+        "que",
+        "la",
+        "buena",
+        "el",
+        "para",
+        "comida"
+      ],
+      "size": 72
+    },
+    {
+      "id": 3,
+      "label": "que, muy, los",
+      "top_terms": [
+        "que",
+        "muy",
+        "los",
+        "el",
+        "es",
+        "en",
+        "la",
+        "lo"
+      ],
+      "size": 95
+    },
+    {
+      "id": 4,
+      "label": "que, es, lugar",
+      "top_terms": [
+        "que",
+        "es",
+        "lugar",
+        "el",
+        "ya",
+        "la",
+        "buen",
+        "comida"
+      ],
+      "size": 40
+    },
+    {
+      "id": 5,
+      "label": "platos, hacen, franquicia muy",
+      "top_terms": [
+        "platos",
+        "hacen",
+        "franquicia muy",
+        "pudiendo",
+        "amigos gracias",
+        "platos sin",
+        "platos hacen",
+        "desde simple"
+      ],
+      "size": 4
+    },
+    {
+      "id": 6,
+      "label": "la, que, es",
+      "top_terms": [
+        "la",
+        "que",
+        "es",
+        "comida",
+        "en",
+        "el",
+        "la comida",
+        "bastante"
+      ],
+      "size": 75
+    }
+  ]
+}

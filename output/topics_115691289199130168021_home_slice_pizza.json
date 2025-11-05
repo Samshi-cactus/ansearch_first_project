@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "engine": "simple",
+    "language": "english",
+    "restaurant_id": "115691289199130168021",
+    "n_docs": 389,
+    "topk": 8,
+    "min_docs": 2,
+    "timestamp": "2025-11-05 05:38:11"
+  },
+  "topics": [
+    {
+      "id": 2,
+      "label": "pizza, great, best",
+      "top_terms": [
+        "pizza",
+        "great",
+        "best",
+        "slice",
+        "place",
+        "austin",
+        "good",
+        "best pizza"
+      ],
+      "size": 377
+    },
+    {
+      "id": 5,
+      "label": "pizza austin, best pizza, austin",
+      "top_terms": [
+        "pizza austin",
+        "best pizza",
+        "austin",
+        "best",
+        "pizza",
+        "maybe",
+        "world",
+        "yes"
+      ],
+      "size": 7
+    }
+  ]
+}
