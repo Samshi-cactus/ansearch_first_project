@@ -1,0 +1,15 @@
+# Core
+numpy>=2.3
+pandas~=2.3.3
+scikit-learn>=1.7
+scipy>=1.16
+
+# Optional NLP (name resolution / NER)
+spacy>=3.8
+# models installed at runtime:
+#   python -m spacy download en_core_web_sm
+
+# Dev tooling
+pytest>=8.3
+ruff>=0.6
+black>=24.10
