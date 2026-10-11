@@ -223,10 +223,13 @@ Summary CSV (after `make summary`):
 | 106603537575677448372 | katzs_delicatessen | 7        | sandwiches | staff | pastrami |
 | 115691289199130168021 | home_slice_pizza   | 7        | awesome    | great | night    |
 
+
 ### Reproducibility
+
 All random components (TF-IDF shuffling and clustering initialisation) use
-`random_state=42` to ensure deterministic results.  
-The prototype was developed and tested on **Python 3.11**.
+`random_state=42` to ensure deterministic results.
+
+The prototype was developed and tested on Python 3.11.
 ---
 
 ## 8) Testing & linting (automated)
