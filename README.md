@@ -15,6 +15,13 @@ Fast, reproducible pipeline with clear topic labels.
 
 ---
 
+### Project Background
+
+This project was developed as part of a one-week, internship-style technical challenge in November 2025. The task was to identify recurring topics in restaurant reviews, processing one restaurant at a time.
+
+The challenge required a working prototype, results published on GitHub and documentation explaining the technical decisions and trade-offs. Given the limited timeframe, I focused on a simple, interpretable and reproducible approach.
+
+
 ## 1) Overview
 
 The pipeline finds **main themes** in Google Local Reviews for a single restaurant and can run in batch across many restaurants.
@@ -116,7 +123,7 @@ Ansearch_first_Project/
 ├─ pytest.ini
 ├─ README.md
 └─ requirements.txt
-````
+```
 
 ---
 
@@ -224,12 +231,13 @@ Summary CSV (after `make summary`):
 | 115691289199130168021 | home_slice_pizza   | 7        | awesome    | great | night    |
 
 
+
 ### Reproducibility
 
-All random components (TF-IDF shuffling and clustering initialisation) use
-`random_state=42` to ensure deterministic results.
+The clustering process uses a fixed random seed (`random_state=42`) to support reproducible results.
 
 The prototype was developed and tested on Python 3.11.
+
 ---
 
 ## 8) Testing & linting (automated)
@@ -282,17 +290,23 @@ robustness.
 
 ---
 
-## 10) License
+## 10) License and Data Attribution
 
-Released under the **MIT License** (see `LICENSE`).
+The original code developed for this project is released under the MIT License. See the `LICENSE` file for details.
 
-*Notes:* Outputs are intentionally committed under `output/` so results are visible without re-running the pipeline. The `.env.example` sets `PYTHONPATH=.` for smooth local imports.
+The project uses Google Local Reviews data made available through the UCSD McAuley Lab datasets page:
 
-The repository includes a compact summary of approximately 23 000 restaurant entries
-in data/restaurants_all.jsonl, extracted and filtered from the original 3.1 million Google Local Reviews records.
-This file contains high-level metadata only for efficient exploration.
+https://cseweb.ucsd.edu/~jmcauley/datasets.html
 
-Each line of restaurants_all.jsonl has the following structure:
+The original dataset is third-party material and is not covered by this project's MIT License. Its use and redistribution remain subject to the original data provider's applicable terms.
+
+---
+
+## 11) Dataset and Reproducibility Notes
+
+The repository includes a catalogue of approximately 23,000 restaurant entries in `data/restaurants_all.jsonl`, extracted and filtered from the original Google Local Reviews dataset containing approximately 3.1 million records.
+
+The catalogue contains restaurant-level metadata for easier exploration. Each entry follows this structure:
 
 ```json
 {
@@ -301,12 +315,13 @@ Each line of restaurants_all.jsonl has the following structure:
   "slug": "<slugified name>",
   "categories": ["Restaurant", "Deli", "Pizza"],
   "n_reviews": 245
-} 
+}
 ```
 
+Five individual JSONL files are included in the `data/` directory, each containing reviews for a selected restaurant. These files form the demonstration dataset for topic extraction and testing.
 
-Five individual JSONL files are included in data/, each containing all reviews for a single restaurant.
-These serve as the core demonstration set for topic extraction and testing.
+Users with access to the original Google Local Reviews dataset can run `scripts/extract_all_restaurants.py` to generate additional restaurant samples or explore other restaurant IDs.
 
-Users with the complete Google Local Reviews dataset can rerun
-scripts/extract_all_restaurants.py to generate new restaurant samples or extend analysis to other IDs.
+Generated results are retained in `output/` so they can be inspected without rerunning the pipeline.
+
+The `.env.example` file sets `PYTHONPATH=.` to support local imports.
