@@ -184,13 +184,13 @@ python -m src.cli \
   --topk 8 \
   --out output/topics_106603537575677448372_katzs_delicatessen.json
 ```
+
 ### Engine Explanation
-The flag `--engine simple` refers to a TF-IDF (unigram + bigram) vectorisation step
-combined with **MiniBatchKMeans** clustering, using an automatic K selection
-heuristic.  
-This design was chosen for its simplicity, transparency, and speed compared
-with heavier topic-modelling methods such as LDA or BERTopic. It provides
-interpretable clusters suitable for quick experimentation in limited time.
+
+The `--engine simple` option uses TF-IDF (unigrams and bigrams) with MiniBatchKMeans clustering. The number of clusters (K) is selected automatically using a heuristic based on the dataset size.
+
+I chose this approach because it is relatively simple, fast and easier to interpret than more complex topic-modelling methods such as LDA or BERTopic. It was suitable for building and testing the prototype within a limited timeframe.
+
 ---
 
 ## 7) Output structure
